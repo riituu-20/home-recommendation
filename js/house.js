@@ -1,10 +1,3 @@
-fetch('..//home-recommendation/pages/navbar.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('navbar').innerHTML = data;
-})
-.catch(error => console.error('Error loading navbar:', error));
-
 
 document.getElementById("filter-button").addEventListener("click", () => {
     const maxPrice = document.getElementById("price").value;

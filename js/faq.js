@@ -1,9 +1,9 @@
-fetch('/home_recomondation/pages/navbar.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('navbar').innerHTML = data;
-})
-.catch(error => console.error('Error loading navbar:', error));
+// fetch('/home_recomondation/pages/navbar.html')
+// .then(response => response.text())
+// .then(data => {
+//     document.getElementById('navbar').innerHTML = data;
+// })
+// .catch(error => console.error('Error loading navbar:', error));
 
 var questions = document.querySelectorAll(".question");
 questions.forEach(function (question) {
