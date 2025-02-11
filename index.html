@@ -1,11 +1,71 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Home_Recommendation</title>
 </head>
+
 <body>
+    <nav class="navbar background h-nav-resp">
+
+        <ul class="navbar-list v-class-resp">
+            <div class="logo"><img src="logo.jpg" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>         
+            <li><a href="pages/houses.html">Explore</a></li>
+            <li><a href="pages/contact.html">ContactUs</a></li>
+            <li><a href="pages/about.html">About</a></li>
+    
+        </ul>
+        <div class="rightnav v-class-resp">
+            <div class="button">
+                <button class="btnlogin-popup" id="btn-first">Login</button>
+                <script>
+                    document.getElementById("btn-first").onclick = function () {
+                        window.location.href = "login.html";
+                    };
+                </script>
+                <button class="btnlogin-popup" id="btn-second">Ragistration</button>
+                <script>
+                    document.getElementById("btn-second").onclick = function () {
+                        window.location.href = "ragistration.html";
+                    };
+                </script>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">Pc building starts here</p>
+                <p class="text-small">Decide your budget or make a pc optimal for your budget.Get recomonded parts and
+                    machines as per your budget</p>
+                <div class="buttons">
+                    <button class="btn" id="expbtn">Explore</button>
+                    <button class="btn" id="faqbtn">FAQ's</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer>
+        <p class="text-footer">
+        Copyright &copy; 2024 PCWare - all rights reserved
+        </p>
+    </footer>
+    <script src="./js/index.js"></script>
     
 </body>
+
 </html>
