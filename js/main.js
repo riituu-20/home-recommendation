@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadFeaturedProperties() {
     try {
-        const response = await fetch('/data/properties.json');
+        const response = await fetch('..//data/properties.json');
         const data = await response.json();
         
         // Display only 3 featured properties
@@ -39,7 +39,7 @@ function createPropertyCard(property) {
                 <p class="card-text">
                     <strong>$${property.price.toLocaleString()}</strong>
                 </p>
-                <a href="/explore.html?id=${property.id}" class="btn btn-primary">View Details</a>
+                <a href="pages/houses.html?id=${property.id}" class="btn btn-primary">View Details</a>
             </div>
         </div>
     `;
