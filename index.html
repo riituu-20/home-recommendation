@@ -57,15 +57,45 @@
             </div>
         </div>
     </section>
-    
-   
-    <footer>
-        <p class="text-footer">
-        Copyright &copy; 2024 PCWare - all rights reserved
-        </p>
-    </footer>
+    <section class="trending-properties py-12">
+        <h2 class="text-2xl font-semibold mb-6">Trending Properties</h2>
+        <div id="propertyList" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Properties will be loaded here -->
+        </div>
+    </section>
+
+    <section class="bg-white p-8 rounded-lg shadow-sm mt-12">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-900">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-3">
+                <i class="fas fa-check-circle text-blue-600 text-2xl"></i>
+                <h3 class="text-lg font-medium text-gray-900">Verified Properties</h3>
+                <p class="text-gray-600">All our listings are thoroughly verified for your peace of mind</p>
+            </div>
+            <div class="space-y-3">
+                <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                <h3 class="text-lg font-medium text-gray-900">Expert Guidance</h3>
+                <p class="text-gray-600">Professional support at every step of your journey</p>
+            </div>
+            <div class="space-y-3">
+                <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                <h3 class="text-lg font-medium text-gray-900">Market Insights</h3>
+                <p class="text-gray-600">Up-to-date data and trends to make informed decisions</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Property Detail Modal -->
+<div id="property-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="modal-content bg-white p-6 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto mx-4">
+        <!-- Modal content will be loaded here -->
+    </div>
+</div>
+
+<script src="js/properties.js"></script>
     <script src="./js/index.js"></script>
-    
+    <script src="js/app.js"></script>
 </body>
 
 </html>
