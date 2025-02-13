@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadFeaturedProperties() {
     try {
-        const response = await fetch('https://github.com/riituu-20/home-recommendation/blob/main/data/properties.json');
+        const response = await fetch('data/properties.json');
         const data = await response.json();
         
         // Display only 3 featured properties
